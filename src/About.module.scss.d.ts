@@ -1,0 +1,9 @@
+export declare const aboutBody: string;
+export declare const box: string;
+export declare const boxAll: string;
+export declare const boxEven: string;
+export declare const boxLeft: string;
+export declare const boxOdd: string;
+export declare const boxRight: string;
+export declare const footer: string;
+export declare const top: string;
