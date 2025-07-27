@@ -7,6 +7,7 @@ import logo from './img/logo.png'
 import main from './img/main.png'
 import {Link} from 'react-router-dom';
 import HomeStyles from './Home.module.scss'
+import {Card} from 'first'
 
 function Home() {
     return(
@@ -31,30 +32,10 @@ function Home() {
             </span>
             </div>
             <div className={HomeStyles.iconBox}>
-                <p>
-                    <img src={icon1}/><br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-                </p>
-                <p>
-                    <img src={icon2}/><br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-                </p>
-                <p>
-                    <img src={icon3}/><br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-                </p>
-                <p style={{marginLeft: "0px"}}>
-                    <img src={icon4}/><br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-                </p>
+                <Card icon={icon1}/>
+                <Card icon={icon2}/>
+                <Card icon={icon3}/>
+                <Card className={HomeStyles.iconEnd} icon={icon4}/>
             </div>
             <div className={HomeStyles.chefs}>
                 <div>

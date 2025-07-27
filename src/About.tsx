@@ -2,6 +2,8 @@ import chefAbout from "./img/chef_about.png"
 import right1 from "./img/right1.png"
 import right2 from "./img/right2.png"
 import AboutStyles from "./About.module.scss"
+import {AboutCard} from "second";
+
 function About(){
     return (
         <div className={AboutStyles.aboutBody}>
@@ -9,33 +11,35 @@ function About(){
                 <img src={chefAbout}/>
                 <img src={right1}/>
                 <img src={right2}/>
-                <div>
-                    <b>
-                        GLOBAL<br/>
-                        BUSINESS<br/><br/>
-                    </b>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </div>
+                <AboutCard className={AboutStyles.boxOdd} content={
+                        <>
+                            GLOBAL<br/>
+                            BUSINESS<br/><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </>
+                }/>
             </div>
             <div className={AboutStyles.boxAll}>
                 <div className={AboutStyles.boxRight}>
-                    <div className={AboutStyles.boxOdd}>
-                        <b>Title</b><br/>
+                    <AboutCard className={AboutStyles.boxOdd} content={
+                        <><b>Title</b><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </>
+                    }/>
+                    <AboutCard className={AboutStyles.boxEven} content={
+                        <><b>Title</b><br/>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut
                         labore et dolore magna aliqua.
-                    </div>
-                    <div className={AboutStyles.boxEven}>
-                        <b>Title</b><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed to elusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </div>
-                    <div className={AboutStyles.boxOdd}>3</div>
-                    <div className={AboutStyles.boxEven}>4</div>
-                    <div className={AboutStyles.boxOdd}>5</div>
-                    <div className={AboutStyles.boxEven}>6</div>
+                        </>
+                    }/>
+                    <AboutCard className={AboutStyles.boxEven} content={<div>TEST</div>}/>
+                    <AboutCard className={AboutStyles.boxOdd} content={<>4</>}/>
+                    <AboutCard className={AboutStyles.boxEven} content={<>5</>}/>
+                    <AboutCard className={AboutStyles.boxOdd} content={<>6</>}/>
                 </div>
-                <div className={AboutStyles.boxLeft}>7</div>
+                <AboutCard className={AboutStyles.boxLeft} content={<>7</>}/>
             </div>
             <footer>
                 <div className={AboutStyles.footer}>

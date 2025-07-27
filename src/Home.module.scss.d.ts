@@ -5,3 +5,4 @@ export declare const iconBox: string;
 export declare const iconTitle: string;
 export declare const mainPicture: string;
 export declare const title: string;
+export declare const iconEnd: string;
